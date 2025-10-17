@@ -26,14 +26,14 @@ Pandas 1.5+
 
 ---
 
-## Hardware
+Hardware
 
-- **GPU (Recommended):** NVIDIA CUDA-enabled device  
-- **CPU:** Works, but training is significantly slower  
+- GPU (Recommended):NVIDIA CUDA-enabled device  
+- CPU:Works, but training is significantly slower  
 
 ---
 
-##Parameter Settings
+Parameter Settings
 
 | Parameter | Description | Value |
 |------------|-------------|--------|
@@ -49,9 +49,65 @@ Pandas 1.5+
 | `augmentation` | Random flip, rotation, zoom | Enabled |
 
 ---
-
-##▶️Execution Steps
-
-### 1️⃣ Clone Repository
+Execution Steps
+1️. Clone Repository
 ```bash
-git clone https:
+git clone https:https://github.com/Aayan-code/Plant-Disease-Detection-using-Deep-learning-1
+2. Set Up Environment
+pip install -r requirements.txt
+
+3. Add Dataset
+
+Dataset of Tomato Leaves.
+If the dataset is large, upload it via Google Drive and link it in this README.
+
+4. Train Model
+python train_model.py
+
+
+or in Jupyter:
+
+!jupyter notebook tomato0.ipynb
+
+5. Fine-Tune ResNet50
+
+Unfreeze the top 30 layers for fine-tuning:
+
+for layer in base_model.layers[-30:]:
+    layer.trainable = True
+
+6. Evaluate Model
+python evaluate_model.py
+
+
+This will display:
+
+Test accuracy
+
+Classification report
+
+Confusion matrix
+
+Accuracy & loss curves
+
+7. Save & Export Model
+model.save('tomato_model_finetuned.keras')
+
+📊 Results Summary
+
+Test Accuracy: 98.7 %
+
+Validation Accuracy: 98.6 %
+
+Test Loss: 0.04
+
+Macro F1 Score: 0.117
+
+📈 Visual Outputs
+
+Confusion Matrix (Before & After Fine-Tuning)
+
+Training Accuracy and Loss Curves
+
+Correct Prediction Samples (Visual Verification)
+
