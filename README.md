@@ -159,7 +159,7 @@ Plant-Disease-Detection/
  ├── Dataset of Tomato Leaves        # All Data about tomato leaves 
  ├── gitattributes                   # configure Git LFS for dataset images                   
  ├── README.md                       # Documentation file  
- └── Tomatoo.ipynb                   # # Full training and evaluation notebook/Output metrics and Grad-CAM visuals
+ └── Tomatoo.ipynb                   #Full training and evaluation notebook/Output metrics and Grad-CAM visuals
 
 ⚠️ Notes
 
