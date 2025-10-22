@@ -156,11 +156,10 @@ Explore EfficientNetV2 or Vision Transformers (ViT) for higher accuracy
 
 📁 Repository Structure
 Plant-Disease-Detection/
- ├── tomatoo.ipynb                   # Full training and evaluation notebook  
- ├── tomato_dataset.zip              # Original dataset archive  
- ├── best_model.keras                # Final fine-tuned model  
+ ├── Dataset of Tomato Leaves        # All Data about tomato leaves 
+ ├── gitattributes                   # configure Git LFS for dataset images                   
  ├── README.md                       # Documentation file  
- └── results/                        # Output metrics and Grad-CAM visuals
+ └── Tomatoo.ipynb                   # # Full training and evaluation notebook/Output metrics and Grad-CAM visuals
 
 ⚠️ Notes
 
